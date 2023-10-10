@@ -1,0 +1,31 @@
+body{
+    margin-top:100px;
+}
+#caja1{
+    height: 500px;
+    margin-top: 120px;
+    margin-left: 120px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
+    position: relative;
+    
+    
+}
+/*Como la caja 2 no esta viendo a la caja 1 esta considerando a su padre al body,porque la caja 1 no tiene posicionamientos*/
+#caja2{
+    background-color: aqua;
+    top: 15px; /*Para los elementos con una posición absoluta,determina la distancia entre el borde superior del elemento y el borde superior del bloque que lo contiene.*/
+    left: 15px;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+}
+/*
+#prueba2{
+    margin-top:70px;
+    margin-left: 100px;
+    background-color: aqua;
+    height: 200px;
+}
+*/

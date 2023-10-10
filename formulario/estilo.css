@@ -1,0 +1,18 @@
+form{
+    padding:50px;
+    width:80px;
+}
+#text{
+    padding:10px;
+    width: 120px;
+    display:block;
+}
+#submit{
+    padding:10px;
+    width: 120px;
+    display:block;
+}
+
+/*
+highligthers.css
+*/
