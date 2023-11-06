@@ -1,0 +1,205 @@
+/*David Pozo Berlinches*/
+/*Ponemos los margenes y rellenos a 0*/
+*{
+    margin: 0;
+    padding: 0; 
+}
+/*
+html{
+    width: 1280px;
+}
+*/
+
+body{
+    background-image: url("imagenes/fondo1.jpg");
+    background-repeat: no-repeat; /*Para que la imagen no se repita*/
+    background-size: cover; /*Ocupa todo el espacio disponible*/
+    font-family: Helvetica; /*Define una fuente de texto para todo el cuerpo del documento*/
+}
+
+/*LAYOUT*/
+header {
+    height: 50px;
+    padding-left: 0.78125%; /* 10px en 1280px */
+    padding-top: 1.171875%; /* 15px en 1280px */
+    background-color: rgb(8, 53, 53);   
+}
+
+nav {
+    background-image: url("imagenes/margaritas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+aside {
+    width: 9.921875%; /* 127px en 1280px */
+    float: left;
+}
+
+main {
+    margin-left: 128px;
+}
+
+article {/*Cambiamos el color a todo el article*/
+    padding: 1.5625%; /* 20px en 1280px */
+    background-color: antiquewhite;
+}
+
+footer {
+    padding-top: 1.5625%; /*  20px en 1280px */
+    padding-left: 0.78125%; /*  10px en 1280px */
+    background-color: rgb(228, 176, 142);
+}
+
+/*NAV*/
+
+nav ul {
+    list-style: none; /*Elimina los puntos de la lista*/
+}
+
+nav li {
+    display: inline; /*Muestra los elementos de la lista en línea*/
+    margin-right: 20px; /*Añade un espacio entre los elementos del menú*/
+}
+
+nav a {
+    text-decoration: none; /*Elimina la subrayado de los enlaces*/
+    color: white;
+}
+
+
+/*ASIDE*/
+
+aside img {
+    display: block; /*Asegura que las imágenes estén una debajo de la otra*/
+    margin-bottom: 20px;
+    width: 68%; /* Este porcentaje lo he sacado probando,al poner el que deberia se descuadran todas las imagenes */
+}
+
+/*ARTICLE*/
+
+ul{
+    list-style:disc;/*Cambiamos los circulos por unos rellenos*/
+}
+li{
+    padding-top: 0.78125%; /* 10px en 1280px */
+    padding-bottom: 0.78125%; /* 10px en 1280px */
+}
+
+
+div table {
+    border-collapse: collapse;/*Hacemos que los bordes esten juntos*/
+    margin: auto;/*Ponemos la tabla en mitad de la pantalla*/
+    margin-top: 50px;
+    text-align: center;/*Centramos los textos e imagenes*/
+}
+
+table img{/*Ajustamos el tamaño de las imagenes de la tabla*/
+    height: 70px; /* AL PONERLO EN % EXPLOTA*/
+    width: auto;
+}
+
+
+.texto {
+    padding: 1.5625%; /* 20px en 1280px */
+    color: rgb(73, 73, 73);
+    font-size: larger;
+}
+.importante{
+    font-size:x-large;/*Remarcamos palabras o frases importantes*/
+    color: rgb(214, 36, 36);
+    font-style: italic;/*Le damos mas presencia al texto*/
+}
+
+/*FORM*/
+input[type="text"] {
+    padding-left: 0.78125%; /* 10px en 1280px */
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+    margin-top: 10px;
+}
+
+form p{
+    margin-top: 15px;
+}
+
+fieldset {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 0.78125%; /* 10px en 1280px */
+    margin-right: 700px;
+}
+
+legend{
+    padding-bottom: 1.5625%; /* 20px en 1280px */
+}
+
+
+
+/* Estilos para pantallas con un ancho máximo de 1000px */
+@media (max-width: 1100px) {
+    
+    article {
+        background-color: rgb(209, 185, 170);
+    }
+
+    fieldset {
+        margin-right: 1em;
+    }
+
+    aside {
+        width: 3em;
+
+    }
+
+    aside img {
+        margin-bottom: 1em;
+        width: 3.9em; /* Este porcentaje lo he sacado probando,al poner el que deberia se descuadran todas las imagenes */
+    }
+
+    header {
+        padding-left: 1em; 
+        padding-top: 2em; 
+    }
+
+    main {
+        margin-left: 4em;
+    }
+
+  
+}
+
+@media (min-width: 2000px){
+    
+    article {
+        background-color: rgb(209, 185, 170);
+    }
+
+    fieldset {
+        margin-right: 1em;
+    }
+
+    aside {
+        width: 3em;
+
+    }
+
+    aside img {
+        margin-bottom: 1em;
+        width: 3.9em; /* Este porcentaje lo he sacado probando,al poner el que deberia se descuadran todas las imagenes */
+    }
+
+    header {
+        padding-left: 1em; 
+        padding-top: 2em; 
+    }
+
+    main {
+        margin-left: 4em;
+    }
+
+  
+}
+  
